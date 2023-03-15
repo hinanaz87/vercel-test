@@ -1,0 +1,98 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main-div{
+  background-image: url(./images/headerimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  max-height: 600px;
+  color: white;
+  /* color: white; */
+   /* background-color: gray;  */
+}
+
+.main-div h4{
+
+font-size: 16px;
+margin-left: 10%;
+margin-top: 20%;
+}
+.main-div h3{
+font-size: 26px;
+margin-left: 10%;
+/* margin-top: 15%; */
+}
+
+.main-div h2{
+font-size: 60px;
+font-weight: 700;
+margin-left: 10%;
+}
+
+.main-div span{
+color: red;
+}
+
+.btn-get-started{
+margin-left: 10% !important;
+
+color: red;
+background-color: white;
+border: 2px solid red;
+padding: 10px 30px;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+transition: 0.5s;
+}
+
+.btn-get-started:hover{
+
+color: white;
+background-color: red;
+
+
+}
+
+
+/* ------------------CARD CSS---------------- */
+
+.card img{
+  margin-top: 20px;
+  width: 150px !important;
+  height: 150px;
+}
+.card{
+
+ margin: 5px !important;
+  max-width: 300px;
+  min-width: 300px;
+  /* min-height: 400px; */
+  margin-top: 30px;
+  border: 2px solid gray;
+  font-size: 14px;
+}
+
+.card a, .card button{
+  color:white;
+  background-color: #02457c;
+  border: 2px solid #02457c;
+  }
+  
+  .card a:hover, .card button:hover{
+    color:#072a47;
+    background-color: white;
+    border: 2px solid #072a47;
+    }
+.search-input{
+  width: 400px;
+  margin: 20px;
+  height: 40px;
+  border: 1px solid green;
+  padding-left: 20px;
+}
