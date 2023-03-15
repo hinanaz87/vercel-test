@@ -4,7 +4,7 @@ const fs = require('fs')
 const fileupload = require('express-fileupload');
 
 const cors = require("cors");
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
 const Jwt = require("jsonwebtoken");
 const jwtKey = "e-comm"
 const admin = require("firebase-admin") ;
@@ -329,7 +329,7 @@ app.post("/login", async (req, res) =>{
       return res.status(401).send({message: 'Invalid username or password'});
     }
     
-    const result = await bcrypt.compare(req.body.password, user.password);
+    const result = await bcryptjs.compare(req.body.password, user.password);
     if (result) {
       const token = await Jwt.sign({result}, jwtKey, {expiresIn:"2h"});
       res.send({user :{
