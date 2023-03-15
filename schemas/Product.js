@@ -6,7 +6,6 @@ const productSchema = new mongoose.Schema({
     productPrice:{type:Number, required: true },
     productCategory:{type:String, required: true },
     isApproved:{type:Boolean, defalut: false },
-    // picture:{type:String, required: true },
     shopName:{type:String, required: true },
     userId:{type:String, },
     productImage:{type:String, required: true },
